@@ -1,0 +1,91 @@
+Vim Setup 06/2011 ( setup mainly for Java )
+-------------------------------------
+
+A. Code Navigation
+- Eclipse + Eclim [ JavaSearch, JavaSearchContext ] , grep, tags
+- NERDTree / Command-T
+- Minibufexplorer ( improved )
+- Taglist + ctags ( ctags -R --language-force=java -f.tags src/ )
+
+B. Code Editing
+- yankring
+- snipmate ( snippets )
+- sorround.vim + repeat.vim
+- Wikipedia
+
+C. Edit-Compile-Edit cycles
+- use eclim javac to point errors in buffer
+- 'brazil-build build.src' with correct Ant errorformat provides standard quickfix
+- changes the makeprg, need to figure out the best of both worlds
+
+D. Killer moves : 
+- Use jumps - <C-o> / <C-i>
+- Scope matching jumps with 'matchit'
+
+E. Color : 
+- Should use 256 color schemes
+- xoria256, desert256
+
+F. Plugin List
+- Taglist 						[ https://github.com/vim-scripts/taglist.vim.git ]
+- Minibufexplorer ( improved ) 	[ https://github.com/fholgado/minibufexpl.vim.git ] 
+- Wikipedia 					[ https://github.com/vim-scripts/wikipedia.vim.git ]
+- NerdTree 						[ https://github.com/scrooloose/nerdtree.git ]
+- Eclim / Eclipse Helios 		[ https://github.com/ervandew/eclim.git ]
+- Yankring 						[ https://github.com/chrismetcalf/vim-yankring.git ]
+- Snipmate 						[ https://github.com/msanders/snipmate.vim.git ]
+- snipmate-snippets  		    [ https://github.com/scrooloose/snipmate-snippets.git ]
+- Sorround + Repeat 			[ https://github.com/tpope/vim-surround.git, https://github.com/tpope/vim-repeat.git ] 
+- Matchit 						[ https://github.com/vim-scripts/matchit.zip.git ]
+- Xoria256 						[ https://github.com/vim-scripts/xoria256.vim.git ]
+- SuperTab 						[ https://github.com/ervandew/supertab.git ]
+- Perforce 						[ ]
+- Pathogen 						[ https://github.com/tpope/vim-pathogen.git ]
+- Solarized 					[ https://github.com/tpope/vim-colors-solarized.git ]
+
+git submodule add git://github.com/tpope/vim-pathogen.git vim/vim-pathogen
+git submodule add git://github.com/tpope/vim-surround.git vim/.vim/bundle/vim-surround
+git submodule add git://github.com/tpope/vim-repeat.git vim/.vim/bundle/vim-repeat
+git submodule add git://github.com/vim-scripts/matchit.zip.git vim/.vim/bundle/matchit
+git submodule add git://github.com/vim-scripts/xoria256.vim.git vim/.vim/bundle/xoria256
+git submodule add git://github.com/ervandew/supertab.git vim/.vim/bundle/supertab
+git submodule add git://github.com/scrooloose/nerdtree.git vim/.vim/bundle/nerdtree
+git submodule add git://github.com/vim-scripts/taglist.vim.git vim/.vim/bundle/taglist
+git submodule add git://github.com/fholgado/minibufexpl.vim.git vim/.vim/bundle/minibufexpl
+git submodule add git://github.com/vim-scripts/wikipedia.vim.git vim/.vim/bundle/wikipedia
+git submodule add git://github.com/tpope/vim-colors-solarized.git vim/.vim/bundle/vim-colors-solarized
+git submodule add git://github.com/chrismetcalf/vim-yankring.git vim/.vim/bundle/vim-yankring
+
+G. Vim Compile Options
+VIM - Vi IMproved 7.3 (2010 Aug 15, compiled Jun 15 2011 13:06:57)
+Compiled by sectorzero@sandeshd@gmail.com
+Normal version with GTK2 GUI.  Features included (+) or not (-):
+-arabic +autocmd +balloon_eval +browse +builtin_terms +byte_offset +cindent 
++clientserver +clipboard +cmdline_compl +cmdline_hist +cmdline_info +comments 
+-conceal +cryptv -cscope +cursorbind +cursorshape +dialog_con_gui +diff 
++digraphs +dnd -ebcdic -emacs_tags +eval +ex_extra +extra_search -farsi 
++file_in_path +find_in_path +float +folding -footer +fork() +gettext 
+-hangul_input +iconv +insert_expand +jumplist -keymap -langmap +libcall 
++linebreak +lispindent +listcmds +localmap -lua +menu +mksession +modify_fname 
++mouse +mouseshape -mouse_dec +mouse_gpm -mouse_jsbterm -mouse_netterm 
+-mouse_sysmouse +mouse_xterm +multi_byte +multi_lang -mzscheme +netbeans_intg 
+-osfiletype +path_extra -perl +persistent_undo +postscript +printer -profile 
+-python -python3 +quickfix +reltime -rightleft -ruby +scrollbind +signs 
++smartindent -sniff +startuptime +statusline -sun_workshop +syntax +tag_binary 
++tag_old_static -tag_any_white -tcl +terminfo +termresponse +textobjects +title
+ +toolbar +user_commands +vertsplit +virtualedit +visual +visualextra +viminfo 
++vreplace +wildignore +wildmenu +windows +writebackup +X11 -xfontset +xim 
++xsmp_interact +xterm_clipboard -xterm_save 
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+      user exrc file: "$HOME/.exrc"
+  system gvimrc file: "$VIM/gvimrc"
+    user gvimrc file: "$HOME/.gvimrc"
+    system menu file: "$VIMRUNTIME/menu.vim"
+  fall-back for $VIM: "/home/sandesh/Tools/vim/vim73/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H -DFEAT_GUI_GTK  -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng12     -g -O2 -D_FORTIFY_SOURCE=1      
+Linking: gcc -L/lib    -L/usr/local/lib -o vim   -L/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 -lglib-2.0   -lXt -lm -lncurses -lselinux -lacl -lgpm          
+
+H. Brower Editing
+- Google Chrome + TextAid + edit-server - really simple and cool!!
+- Can work accorss remote machines
