@@ -57,18 +57,18 @@ endif
 " Color {
 
 " Solarized {
-set background=dark
-set t_Co=16
-let g:solarized_termcolors=16
-colorscheme solarized
+"set background=dark
+"set t_Co=16
+"let g:solarized_termcolors=16
+"colorscheme solarized
 " }
 
 " 256 ColorScheme {
-"set t_Co=256
-"set t_AF=[3%p1%dm
-"set t_AB=[4%p1%dm
+set t_Co=256
+set t_AF=[3%p1%dm
+set t_AB=[4%p1%dm
 
-"colorscheme xoria256
+colorscheme xoria256
 " }
 
 " }
