@@ -103,6 +103,30 @@ set softtabstop=4 				" let backspace delete indent
 " }
 
 " Plugins {
+
+" SuperTab {
+" supertab + eclim == java win
+let g:SuperTabDefaultCompletionType="<C-x><C-u>"
+let g:SuperTabDefaultCompletionTypeDiscovery = [
+\ "&completefunc:<C-x><C-u>",
+\ "&omnifunc:<C-x><C-o>",
+\ ]
+let g:SuperTabLongestHighlight = 1
+inoremap <C-space> <C-x><C-o>
+" }
+
+" NERDTree {
+nmap <silent> <Leader>t :NERDTreeToggle<CR>
+" }
+
+" TagList {
+let g:Tlist_Show_One_File=1
+let g:Tlist_Use_Right_Window=1
+let g:Tlist_WinWidth=40
+let g:Tlist_GainFocus_On_ToggleOpen=1
+nmap <silent> <Leader>c :TlistToggle<cr>
+" }
+
 " }
 
 " IDE {
