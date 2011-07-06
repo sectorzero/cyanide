@@ -90,7 +90,7 @@ set history=1000
 " }
 
 " Formatting {
-set list
+"set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
 " set nowrap                     	" wrap long lines
