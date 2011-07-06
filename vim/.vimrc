@@ -130,4 +130,14 @@ nmap <silent> <Leader>c :TlistToggle<cr>
 " }
 
 " IDE {
+
+" Edit-Compile-Edit Cycle
+set efm=%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
+
+" }
+
+" Customization / Override {
+    if filereadable(expand("~/.vimrc.local"))
+        source ~/.vimrc.local
+    endif
 " }
