@@ -147,3 +147,7 @@ I. :scriptnames
  J. TODO
  - Snipmate
  - Wikipedia
+
+ I. Experimental
+ - vim-fugitive ( https://github.com/tpope/vim-fugitive )
+git submodule add git://github.com/tpope/vim-fugitive.git vim/.vim/bundle/vim-fugitive
