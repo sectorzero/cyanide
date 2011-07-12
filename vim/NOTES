@@ -1,4 +1,4 @@
-Vim Setup 06/2011 ( setup mainly for Java )
+Vim Setup ( setup mainly for Java )
 -------------------------------------
 
 A. Code Navigation
@@ -12,10 +12,21 @@ B. Code Editing
 - snipmate ( snippets )
 - sorround.vim + repeat.vim
 - Wikipedia
+- Java 
+-- Special function for computing package string
+-- Use snipmate for class body to be completed with filename
+-- Eclim logging configured to add logging infra automatically
+-- Ecling :JavaConstuctor for all subsets of constructors
+-- :JavaImpl / :JavaDelegate to provide and complete methods
+-- :JavaImport for auto importing based on classpath
+-- :JavaCorrect for correction suggestions
+-- :JavaDocComment for auto JavaDoc comment insertion
+-- :JavaFormat for formatting
+-- snipmate for all code snippets
 
 C. Edit-Compile-Edit cycles
 - use eclim javac to point errors in buffer
-- 'brazil-build build.src' with correct Ant errorformat provides standard quickfix
+- with correct Ant errorformat provides standard quickfix
 - changes the makeprg, need to figure out the best of both worlds
 
 D. Killer moves : 
