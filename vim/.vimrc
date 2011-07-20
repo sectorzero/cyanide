@@ -19,7 +19,7 @@ set novisualbell
 set noerrorbells
 " }
 
-" Pathogen {
+" Pathogen Plugin Management {
 " Ensure that the ~/.vim/bundle/ system works
 runtime! autoload/pathogen.vim
 silent! call pathogen#helptags()
@@ -87,6 +87,9 @@ set pastetoggle=<C-p>
 ":map <C-u> :set list!<cr>
 
 set history=1000
+
+" Do Not Pop Preview Window for OmniComplete / AutoComplete
+set completeopt-=preview
 " }
 
 " Formatting {
