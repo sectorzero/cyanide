@@ -135,6 +135,13 @@ autocmd BufRead,BufNewFile *.wiki            setfiletype Wikipedia
 autocmd BufRead,BufNewFile *.wikipedia.org*  setfiletype Wikipedia
 " }
 
+" Eclim {
+" When a single result it found, open the corresponding file in a buffer
+let g:EclimJavaSearchSingleResult='edit'
+" Do not try to override makeprg and efm
+let g:EclimJavaCompilerAutoDetect=0
+" }
+
 " }
 
 " IDE {
