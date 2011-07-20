@@ -127,6 +127,11 @@ let g:Tlist_GainFocus_On_ToggleOpen=1
 nmap <silent> <Leader>c :TlistToggle<cr>
 " }
 
+" Wikipedia {
+autocmd BufRead,BufNewFile *.wiki            setfiletype Wikipedia
+autocmd BufRead,BufNewFile *.wikipedia.org*  setfiletype Wikipedia
+" }
+
 " }
 
 " IDE {
