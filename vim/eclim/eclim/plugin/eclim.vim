@@ -1,0 +1,1 @@
+../../eclim-latest/plugin/eclim.vim
