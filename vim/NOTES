@@ -54,6 +54,7 @@ F. Plugin List
 - Perforce 						[ ]
 - Pathogen 						[ https://github.com/tpope/vim-pathogen.git ]
 - Solarized 					[ https://github.com/altercation/vim-colors-solarized.git ] 
+- Latex                         [ https://github.com/jcf/vim-latex.git/ ]
 
 git submodule add git://github.com/tpope/vim-pathogen.git vim/vim-pathogen
 git submodule add git://github.com/tpope/vim-surround.git vim/.vim/bundle/vim-surround
@@ -67,6 +68,7 @@ git submodule add git://github.com/fholgado/minibufexpl.vim.git vim/.vim/bundle/
 git submodule add git://github.com/vim-scripts/wikipedia.vim.git vim/.vim/bundle/wikipedia
 git submodule add git://github.com/altercation/vim-colors-solarized.git vim/.vim/bundle/vim-colors-solarized
 git submodule add git://github.com/chrismetcalf/vim-yankring.git vim/.vim/bundle/vim-yankring
+git submodule add git://github.com/jcf/vim-latex.git vim/.vim/bundle/vim-latex
 
 G. Vim Compile Options
 VIM - Vi IMproved 7.3 (2010 Aug 15, compiled Jun 15 2011 13:06:57)
