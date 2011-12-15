@@ -53,7 +53,7 @@ F. Plugin List
 - SuperTab 						[ https://github.com/ervandew/supertab.git ]
 - Perforce 						[ ]
 - Pathogen 						[ https://github.com/tpope/vim-pathogen.git ]
-- Solarized 					[ https://github.com/tpope/vim-colors-solarized.git ]
+- Solarized 					[ https://github.com/altercation/vim-colors-solarized.git ] 
 
 git submodule add git://github.com/tpope/vim-pathogen.git vim/vim-pathogen
 git submodule add git://github.com/tpope/vim-surround.git vim/.vim/bundle/vim-surround
@@ -65,7 +65,7 @@ git submodule add git://github.com/scrooloose/nerdtree.git vim/.vim/bundle/nerdt
 git submodule add git://github.com/vim-scripts/taglist.vim.git vim/.vim/bundle/taglist
 git submodule add git://github.com/fholgado/minibufexpl.vim.git vim/.vim/bundle/minibufexpl
 git submodule add git://github.com/vim-scripts/wikipedia.vim.git vim/.vim/bundle/wikipedia
-git submodule add git://github.com/tpope/vim-colors-solarized.git vim/.vim/bundle/vim-colors-solarized
+git submodule add git://github.com/altercation/vim-colors-solarized.git vim/.vim/bundle/vim-colors-solarized
 git submodule add git://github.com/chrismetcalf/vim-yankring.git vim/.vim/bundle/vim-yankring
 
 G. Vim Compile Options

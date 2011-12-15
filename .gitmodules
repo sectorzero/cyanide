@@ -4,9 +4,6 @@
 [submodule "vim/.vim/bundle/xoria256"]
 	path = vim/.vim/bundle/xoria256
 	url = git://github.com/vim-scripts/xoria256.vim.git
-[submodule "vim/.vim/bundle/vim-colors-solarized"]
-	path = vim/.vim/bundle/vim-colors-solarized
-	url = git://github.com/tpope/vim-colors-solarized.git
 [submodule "vim/.vim/bundle/vim-surround"]
 	path = vim/.vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
@@ -34,3 +31,6 @@
 [submodule "vim/.vim/bundle/vim-fugitive"]
 	path = vim/.vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "vim/.vim/bundle/vim-colors-solarized"]
+	path = vim/.vim/bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
