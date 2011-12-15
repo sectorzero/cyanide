@@ -103,31 +103,31 @@ H. Brower Editing
 - Can work accorss remote machines
 
 I. :scriptnames
-  1: ~/sanide/vim/.vimrc
+  1: ~/cyanide/vim/.vimrc
   2: ~/vim/vim73/share/vim/vim73/filetype.vim
   3: ~/vim/vim73/share/vim/vim73/ftplugin.vim
   4: ~/vim/vim73/share/vim/vim73/indent.vim
   5: ~/vim/vim73/share/vim/vim73/syntax/syntax.vim
   6: ~/vim/vim73/share/vim/vim73/syntax/synload.vim
   7: ~/vim/vim73/share/vim/vim73/syntax/syncolor.vim
-  8: ~/sanide/vim/.vim/autoload/pathogen.vim
-  9: ~/sanide/vim/.vim/bundle/xoria256/colors/xoria256.vim
- 10: ~/sanide/vim/eclim/eclim-1.6.3/plugin/eclim.vim
- 11: ~/sanide/vim/eclim/eclim-1.6.3/eclim/plugin/common.vim
- 12: ~/sanide/vim/eclim/eclim-1.6.3/eclim/plugin/eclim.vim
- 13: ~/sanide/vim/eclim/eclim-1.6.3/eclim/autoload/eclim/cygwin.vim
- 14: ~/sanide/vim/eclim/eclim-1.6.3/eclim/plugin/ftdetect.vim
- 15: ~/sanide/vim/eclim/eclim-1.6.3/eclim/plugin/java_tools.vim
- 16: ~/sanide/vim/eclim/eclim-1.6.3/eclim/plugin/largefile.vim
- 17: ~/sanide/vim/eclim/eclim-1.6.3/eclim/plugin/make.vim
- 18: ~/sanide/vim/eclim/eclim-1.6.3/eclim/plugin/project.vim
- 19: ~/sanide/vim/.vim/bundle/matchit/plugin/matchit.vim
- 20: ~/sanide/vim/.vim/bundle/minibufexpl/plugin/minibufexpl.vim
- 21: ~/sanide/vim/.vim/bundle/nerdtree/plugin/NERD_tree.vim
- 22: ~/sanide/vim/.vim/bundle/supertab/plugin/supertab.vim
- 23: ~/sanide/vim/.vim/bundle/taglist/plugin/taglist.vim
- 24: ~/sanide/vim/.vim/bundle/vim-surround/plugin/surround.vim
- 25: ~/sanide/vim/.vim/bundle/vim-yankring/plugin/yankring.vim
+  8: ~/cyanide/vim/.vim/autoload/pathogen.vim
+  9: ~/cyanide/vim/.vim/bundle/xoria256/colors/xoria256.vim
+ 10: ~/cyanide/vim/eclim/eclim-1.6.3/plugin/eclim.vim
+ 11: ~/cyanide/vim/eclim/eclim-1.6.3/eclim/plugin/common.vim
+ 12: ~/cyanide/vim/eclim/eclim-1.6.3/eclim/plugin/eclim.vim
+ 13: ~/cyanide/vim/eclim/eclim-1.6.3/eclim/autoload/eclim/cygwin.vim
+ 14: ~/cyanide/vim/eclim/eclim-1.6.3/eclim/plugin/ftdetect.vim
+ 15: ~/cyanide/vim/eclim/eclim-1.6.3/eclim/plugin/java_tools.vim
+ 16: ~/cyanide/vim/eclim/eclim-1.6.3/eclim/plugin/largefile.vim
+ 17: ~/cyanide/vim/eclim/eclim-1.6.3/eclim/plugin/make.vim
+ 18: ~/cyanide/vim/eclim/eclim-1.6.3/eclim/plugin/project.vim
+ 19: ~/cyanide/vim/.vim/bundle/matchit/plugin/matchit.vim
+ 20: ~/cyanide/vim/.vim/bundle/minibufexpl/plugin/minibufexpl.vim
+ 21: ~/cyanide/vim/.vim/bundle/nerdtree/plugin/NERD_tree.vim
+ 22: ~/cyanide/vim/.vim/bundle/supertab/plugin/supertab.vim
+ 23: ~/cyanide/vim/.vim/bundle/taglist/plugin/taglist.vim
+ 24: ~/cyanide/vim/.vim/bundle/vim-surround/plugin/surround.vim
+ 25: ~/cyanide/vim/.vim/bundle/vim-yankring/plugin/yankring.vim
  26: ~/vim/vim73/share/vim/vim73/plugin/getscriptPlugin.vim
  27: ~/vim/vim73/share/vim/vim73/plugin/gzip.vim
  28: ~/vim/vim73/share/vim/vim73/plugin/matchparen.vim
@@ -138,11 +138,11 @@ I. :scriptnames
  33: ~/vim/vim73/share/vim/vim73/plugin/tohtml.vim
  34: ~/vim/vim73/share/vim/vim73/plugin/vimballPlugin.vim
  35: ~/vim/vim73/share/vim/vim73/plugin/zipPlugin.vim
- 36: ~/sanide/vim/eclim/eclim-1.6.3/eclim/autoload/eclim/display/signs.vim
- 37: ~/sanide/vim/.vim/bundle/nerdtree/nerdtree_plugin/exec_menuitem.vim
- 38: ~/sanide/vim/.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim
- 39: ~/sanide/vim/eclim/eclim-1.6.3/eclim/autoload/eclim/util.vim
- 40: ~/sanide/vim/eclim/eclim-1.6.3/eclim/autoload/eclim/vimplugin.vim
+ 36: ~/cyanide/vim/eclim/eclim-1.6.3/eclim/autoload/eclim/display/signs.vim
+ 37: ~/cyanide/vim/.vim/bundle/nerdtree/nerdtree_plugin/exec_menuitem.vim
+ 38: ~/cyanide/vim/.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim
+ 39: ~/cyanide/vim/eclim/eclim-1.6.3/eclim/autoload/eclim/util.vim
+ 40: ~/cyanide/vim/eclim/eclim-1.6.3/eclim/autoload/eclim/vimplugin.vim
  41: ~/vim/vim73/share/vim/vim73/scripts.vim
 
  J. TODO
