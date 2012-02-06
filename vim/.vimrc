@@ -15,8 +15,6 @@ set background=dark
 filetype plugin on
 filetype plugin indent on
 syntax enable
-set novisualbell
-set noerrorbells
 " }
 
 " Pathogen Plugin Management {
@@ -76,9 +74,13 @@ colorscheme solarized
 " }
 
 " Usability {
-set incsearch
-set ignorecase
-set smartcase
+set novisualbell  " silent
+set noerrorbells  " silent
+
+set incsearch     " show search matches as you type
+set ignorecase    " ignore case when searching
+set smartcase     " ignore case if search pattern is all lowercase,
+                  "    case-sensitive otherwise
 set iskeyword+=_
 
 set autowrite
@@ -99,10 +101,18 @@ set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 " set nowrap                     	" wrap long lines
 set autoindent                 	" indent at the same level of the previous line
 
-set shiftwidth=4               	" use indents of 4 spaces
+set shiftwidth=4                " number of spaces to use for autoindenting
 set expandtab 	  	     		" tabs are spaces, not tabs
 set tabstop=4 					" an indentation every four columns
 set softtabstop=4 				" let backspace delete indent
+
+" Ref : http://nvie.com/posts/how-i-boosted-my-vim/
+set backspace=indent,eol,start  " allow backspacing over everything in insert mode
+set copyindent                  " copy the previous indentation on autoindenting
+set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
+"set showmatch                  " set show matching parenthesis
+set smarttab                    " insert tabs on the start of a line according to
+                                "    shiftwidth, not tabstop
 " }
 
 " Plugins {
