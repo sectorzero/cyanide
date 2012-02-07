@@ -1,3 +1,21 @@
-cyanide - super slick development environment setup for Linux and Vim
+                    cyanide 
+"super slick development environment setup using Vim"
 
-Description and Manual [TODO]
+This is a collection of plugins and customizations which gives 
+an out of the box and easy to manage Vim environment for 
+development and editing. It is is a tested working setup using 
+carefully chosen assembly or plugins. The goal is that one 
+should be able to setup and go with zero pain and effort.
+
+Tested/Works On : 
+Vim 7.3 - Linux / Mac OS X
+
+Quick Install Instructions : 
+- Install Vim 7.3
+- cd ~/
+- git clone git://github.com/sectorzero/cyanide.git
+- git submodule init
+- git submodule update
+- ln -s ~/cyanide/vim/.vim
+- ln -s ~/cyanide/vim/.vimrc
+- touch ~/.vimrc.local ( add your rc customizations here )
