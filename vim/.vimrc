@@ -7,6 +7,14 @@
 " author : sectorzero
 " }
 
+" Pathogen/Git Plugin Management {
+" Note: This needs to be invoked before any 'filetype' detection
+" Ensure that the ~/.vim/bundle/ system works
+runtime! autoload/pathogen.vim
+silent! call pathogen#infect()
+silent! call pathogen#helptags()
+" }
+
 " General Vim Environment {
 
 " Settings {
@@ -17,12 +25,6 @@ filetype plugin indent on
 syntax enable
 " }
 
-" Pathogen Plugin Management {
-" Ensure that the ~/.vim/bundle/ system works
-runtime! autoload/pathogen.vim
-silent! call pathogen#helptags()
-silent! call pathogen#runtime_append_all_bundles()
-" }
 
 " }
 
