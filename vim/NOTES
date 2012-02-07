@@ -154,3 +154,7 @@ I. :scriptnames
  I. Experimental
  - vim-fugitive ( https://github.com/tpope/vim-fugitive )
 git submodule add git://github.com/tpope/vim-fugitive.git vim/.vim/bundle/vim-fugitive
+
+J. References
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+
