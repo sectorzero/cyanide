@@ -40,3 +40,6 @@
 [submodule "vim/.vim/bundle/vim-alternate"]
 	path = vim/.vim/bundle/vim-alternate
 	url = git://github.com/vim-scripts/a.vim.git
+[submodule "vim/.vim/bundle/vim-sorround"]
+	path = vim/.vim/bundle/vim-sorround
+	url = git://github.com/tpope/vim-surround.git
