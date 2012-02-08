@@ -7,12 +7,17 @@
 " author : sectorzero
 " }
 
-" Pathogen/Git Plugin Management {
-" Note: This needs to be invoked before any 'filetype' detection
-" Ensure that the ~/.vim/bundle/ system works
+" Pathogen Plugin Management {
+
+" Blacklist / Disable Plugins
+let g:pathogen_disabled = []
+" call add(g:pathogen_disabled, '<bundle_name>')
+
+" Pathogen initialization of plugin bundles
 runtime! autoload/pathogen.vim
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
+
 " }
 
 " General Vim Environment {
