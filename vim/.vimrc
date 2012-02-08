@@ -81,45 +81,49 @@ colorscheme solarized
 " }
 
 " Usability {
+
 set novisualbell  " silent
 set noerrorbells  " silent
+
+" Ref : http://nvie.com/posts/how-i-boosted-my-vim/
+set backspace=indent,eol,start  
+                  "allow backspacing over everything in insert mode
 
 set incsearch     " show search matches as you type
 set ignorecase    " ignore case when searching
 set smartcase     " ignore case if search pattern is all lowercase,
-                  "    case-sensitive otherwise
+                  " case-sensitive otherwise
 set iskeyword+=_
 
 set autowrite
 
 set pastetoggle=<C-p>
-":map <C-u> :set list!<cr>
 
 set history=1000
 
 " Do Not Pop Preview Window for OmniComplete / AutoComplete
 set completeopt-=preview
+
 " }
 
 " Formatting {
+
 "set list
-set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
-
-" set nowrap                     	" wrap long lines
+":map <C-u> :set list!<cr>
+set listchars=tab:>.,trail:.,extends:#,nbsp:. 
+                                " Highlight problematic whitespace
+                                
+"set nowrap                    " wrap long lines
 set autoindent                 	" indent at the same level of the previous line
-
 set shiftwidth=4                " number of spaces to use for autoindenting
 set expandtab 	  	     		" tabs are spaces, not tabs
 set tabstop=4 					" an indentation every four columns
 set softtabstop=4 				" let backspace delete indent
-
-" Ref : http://nvie.com/posts/how-i-boosted-my-vim/
-set backspace=indent,eol,start  " allow backspacing over everything in insert mode
 set copyindent                  " copy the previous indentation on autoindenting
 set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
 "set showmatch                  " set show matching parenthesis
 set smarttab                    " insert tabs on the start of a line according to
-                                "    shiftwidth, not tabstop
+                                " shiftwidth, not tabstop
 " }
 
 " Plugins {
@@ -166,14 +170,15 @@ let g:EclimJavaCompilerAutoDetect=0
 " Edit-Compile-Edit Cycle
 set efm=%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
 
+" Search / Custom Grep
+"set grepprg=grep\ -nH\ $*
+set grepprg=grep\ -srnHw\ --binary-files=without-match\ --exclude=\"\*.git\*\"\ --exclude=\"\*build\*\"\ --exclude=\"\*tags\*\"\ .\ -e\ $*
+map <C-x><C-x> :execute " grep -srnHw --binary-files=without-match --exclude=\"\*.git\*\" --exclude=\"\*build\*\" --exclude=\"\*tags\*\" . -e " . expand("<cword>") . " " <bar> cwindow<CR>
+
 " }
 
 " Latex {
 
-" IMPORTANT: grep will sometimes skip displaying the file name if you
-" search in a singe file. This will confuse Latex-Suite. Set your grep
-" program to always generate a file-name.
-set grepprg=grep\ -nH\ $*
 
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
