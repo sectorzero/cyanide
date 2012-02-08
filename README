@@ -1,21 +1,75 @@
                     cyanide 
 "super slick development environment setup using Vim"
 
-This is a collection of plugins and customizations which gives 
-an out of the box and easy to manage Vim environment for 
-development and editing. It is is a tested working setup using 
-carefully chosen assembly or plugins. The goal is that one 
-should be able to setup and go with zero pain and effort.
+What is it
+----------
+This is an assembly of plugins and customizations which provides
+an powerful development and editing environment on Vim. Over the
+years I have experimented with various Vim setups to arrive at a
+simple and rich development environment and this is a result of 
+all the distillation. The goal is to provide a drop-in bundle 
+which gives you all the goodness without having to go through all
+the pain and effort of setup or management. This is what I use on
+a daily basis heavily, so this is really a carefully assembled set
+of compatible plugins and customization. If you have experience 
+the pain of unpredicatability of Vim configurations, you would 
+really enjoy this. Happy Vimming!!
 
-Tested/Works On : 
-Vim 7.3 - Linux / Mac OS X
+Features 
+--------
+- Plugins which are really useful on a daily basis for general coding / editing
+- All plugins maintained via Pathogen / Git 
+- Easily customizable for individual needs - both plugins and rc
+- All the common goodness like Taglist, Yankring, SuperTab etc. ( see all plugins in .gitmodules ) 
+- Java IDE support via Eclim ( wiki TODO )
+- tex editing support using latex-suite ( wiki TODO )
+- Default 'Solarized' color configuration
 
-Quick Install Instructions : 
-- Install Vim 7.3
-- cd ~/
-- git clone git://github.com/sectorzero/cyanide.git
-- git submodule init
-- git submodule update
-- ln -s ~/cyanide/vim/.vim
-- ln -s ~/cyanide/vim/.vimrc
-- touch ~/.vimrc.local ( add your rc customizations here )
+Vim  ( recommended )
+--------------------
+VIM - Vi IMproved 7.3 (2010 Aug 15, compiled Jun 15 2011 13:06:57)
+Compiled by sectorzero@sandeshd@gmail.com
+Normal version with GTK2 GUI.  Features included (+) or not (-):
+-arabic +autocmd +balloon_eval +browse +builtin_terms +byte_offset +cindent 
++clientserver +clipboard +cmdline_compl +cmdline_hist +cmdline_info +comments 
+-conceal +cryptv -cscope +cursorbind +cursorshape +dialog_con_gui +diff 
++digraphs +dnd -ebcdic -emacs_tags +eval +ex_extra +extra_search -farsi 
++file_in_path +find_in_path +float +folding -footer +fork() +gettext 
+-hangul_input +iconv +insert_expand +jumplist -keymap -langmap +libcall 
++linebreak +lispindent +listcmds +localmap -lua +menu +mksession +modify_fname 
++mouse +mouseshape -mouse_dec +mouse_gpm -mouse_jsbterm -mouse_netterm 
+-mouse_sysmouse +mouse_xterm +multi_byte +multi_lang -mzscheme +netbeans_intg 
+-osfiletype +path_extra -perl +persistent_undo +postscript +printer -profile 
+-python -python3 +quickfix +reltime -rightleft -ruby +scrollbind +signs 
++smartindent -sniff +startuptime +statusline -sun_workshop +syntax +tag_binary 
++tag_old_static -tag_any_white -tcl +terminfo +termresponse +textobjects +title
+ +toolbar +user_commands +vertsplit +virtualedit +visual +visualextra +viminfo 
++vreplace +wildignore +wildmenu +windows +writebackup +X11 -xfontset +xim 
++xsmp_interact +xterm_clipboard -xterm_save 
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+      user exrc file: "$HOME/.exrc"
+  system gvimrc file: "$VIM/gvimrc"
+    user gvimrc file: "$HOME/.gvimrc"
+    system menu file: "$VIMRUNTIME/menu.vim"
+  fall-back for $VIM: "/home/sandesh/Tools/vim/vim73/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H -DFEAT_GUI_GTK  -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng12     -g -O2 -D_FORTIFY_SOURCE=1      
+Linking: gcc -L/lib    -L/usr/local/lib -o vim   -L/lib -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 -lglib-2.0   -lXt -lm -lncurses -lselinux -lacl -lgpm          
+
+Requirements
+------------
+- Vim
+- Linux / Mac OS X ( Tested/Used/WorksOn )
+
+Quick Install Instructions 
+--------------------------
+ cd ~
+ git clone git://github.com/sectorzero/cyanide.git
+ git submodule init
+ git submodule update
+ ln -s ~/cyanide/vim/.vim
+ ln -s ~/cyanide/vim/.vimrc
+ touch ~/.vimrc.local ( add your rc customizations here )
+
+Instructions for Individual Features ( TODO )
+------------------------------------
