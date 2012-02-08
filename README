@@ -28,7 +28,6 @@ Features
 Vim  ( recommended )
 --------------------
 VIM - Vi IMproved 7.3 (2010 Aug 15, compiled Jun 15 2011 13:06:57)
-Compiled by sectorzero@sandeshd@gmail.com
 Normal version with GTK2 GUI.  Features included (+) or not (-):
 -arabic +autocmd +balloon_eval +browse +builtin_terms +byte_offset +cindent 
 +clientserver +clipboard +cmdline_compl +cmdline_hist +cmdline_info +comments 
