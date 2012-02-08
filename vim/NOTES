@@ -158,3 +158,21 @@ git submodule add git://github.com/tpope/vim-fugitive.git vim/.vim/bundle/vim-fu
 J. References
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
+K. How does completion happen in vim
+Basic concept :
+- When editing - i.e during insertion mode, completion functions can be invoked as per 'ins-completion'
+- 'ins-completion' gives various access to various 'functions' for completion which provide different behaviour for the same context.
+- The completion functions desribed in 'ins-completion' are either provided by Vim or can be defined as a user function.
+- Basically the only thing one needs to understand is that you can invoke 'completion behaviours' using 'functions' in 'insert mode'
+- 'user completion / completefunc' and 'omni completion/ omnifunc' are hooks where special and complex user defined functions can be used
+- The above framework is provided by Vim, the rest of the magic is all user defined behaviour
+- Objects are : insert mode, insertion/text context, completion invocation event, completion functions
+User defined completion functions :
+- User / Omni ( not sure of the diff or if there is any )
+- Eg. OmniCppComplete, Eclim etc.
+Invocation Helpers :
+- Since one needs to remember different mappings for invoking different completion behaviours, there are plugins which try to make this user friendly
+- Eg. SuperTab - tries to provide a simple one-stroke interface to completion functions ( which can be confusing at first )
+
+
+
