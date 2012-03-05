@@ -1,0 +1,19 @@
+#ifndef ${1:__`toupper(expand("%:h"))`_`toupper(expand("%:t:r"))`_H}
+#define $1
+
+namespace ${2}
+{
+
+	class ${3:`expand("%:t:r")`}
+	{
+		public:
+			$3();
+			virtual ~$3();
+			${4}
+		
+		private:
+	};
+
+}
+
+#endif // --- #ifndef $1 ---

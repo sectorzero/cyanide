@@ -1,0 +1,85 @@
+#define UnitTest ${1:`expand("%:t:r")`}
+
+// Project Includes
+
+// Test Class Includes
+#include <${2}>
+
+// CppUnit includes
+#include <cppunit/BriefTestProgressListener.h>
+#include <cppunit/CompilerOutputter.h>
+#include <cppunit/TestResult.h>
+#include <cppunit/TestResultCollector.h>
+#include <cppunit/TestRunner.h>
+#include <cppunit/extensions/HelperMacros.h>
+
+#include <iostream>
+#include <string>
+
+using namespace ${3:};
+using namespace CppUnit;
+using namespace std;
+
+// ------------------------------------------------------
+// TEST FIXTURES
+// ------------------------------------------------------
+
+namespace $3
+{
+}
+
+// -------------------------------------------------------------
+// TEST CLASS
+// -------------------------------------------------------------
+class $1 : public TestCase
+{
+    public : 
+        CPPUNIT_TEST_SUITE($1);
+        // >>
+        // <<
+        CPPUNIT_TEST_SUITE_END();
+
+    protected : 
+
+    public:
+        void setUp()
+        {
+        }
+
+        void tearDown()
+        {
+        }
+
+    private:
+
+};
+
+${4}
+
+CPPUNIT_TEST_SUITE_REGISTRATION($1);
+
+// Unit Test Main ( Boilerplate )
+int main()
+{
+  // Create the event manager and test controller
+  TestResult controller;
+
+  // Add a listener that colllects test result
+  TestResultCollector result;
+  controller.addListener( &result );
+
+  // Add a listener that print dots as test run.
+  BriefTestProgressListener progress;
+  controller.addListener( &progress );
+
+  // Add the top suite to the test runner
+  TestRunner runner;
+  runner.addTest( TestFactoryRegistry::getRegistry().makeTest() );
+  runner.run( controller );
+
+  // Print test in a compiler compatible format.
+  CompilerOutputter outputter( &result, std::cerr );
+  outputter.write();
+
+  return result.wasSuccessful() ? 0 : 1;
+}

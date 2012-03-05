@@ -1,0 +1,6 @@
+        CPPUNIT_TEST(test${1:});
+        void test$1(void);
+void `expand("%:t:r")`::test$1(void)
+{
+	${2}
+}
