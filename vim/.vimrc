@@ -161,6 +161,8 @@ autocmd BufRead,BufNewFile *.wikipedia.org*  setfiletype Wikipedia
 " }
 
 " ack-vim {
+nnoremap <Leader>s :Ack 
+nnoremap <Leader>a :Ack <cword><cr> 
 let g:ackprg="$CYANIDE_HOME/vim/ack/ack-standalone -H --nocolor --nogroup --column" 
 " }
 
