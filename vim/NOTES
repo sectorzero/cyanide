@@ -44,7 +44,7 @@ F. Plugin List
 - Wikipedia 					[ https://github.com/vim-scripts/wikipedia.vim.git ]
 - NerdTree 						[ https://github.com/scrooloose/nerdtree.git ]
 - Eclim / Eclipse Helios 		[ https://github.com/ervandew/eclim.git ]
-- Yankring 						[ https://github.com/chrismetcalf/vim-yankring.git ]
+- Yankring 						[ git://github.com/vim-scripts/YankRing.vim.git ]
 - Snipmate 						[ https://github.com/msanders/snipmate.vim.git ]
 - snipmate-snippets  		    [ https://github.com/scrooloose/snipmate-snippets.git ]
 - Sorround + Repeat 			[ https://github.com/tpope/vim-surround.git, https://github.com/tpope/vim-repeat.git ] 

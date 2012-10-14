@@ -61,3 +61,6 @@
 [submodule "vim/.vim/bundle/vim-tagbar"]
 	path = vim/.vim/bundle/vim-tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule "vim/.vim/bundle/vim-yankring"]
+	path = vim/.vim/bundle/vim-yankring
+	url = git://github.com/vim-scripts/YankRing.vim.git

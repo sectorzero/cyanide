@@ -165,6 +165,7 @@ let g:ackprg="$CYANIDE_HOME/vim/ack/ack-standalone -H --nocolor --nogroup --colu
 " }
 
 " ctrlp {
+let g:ctrlp_map = '<Leader>f'
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_open_multiple_files = '1tjr'
 let g:ctrlp_custom_ignore = {
@@ -186,6 +187,10 @@ let g:syntastic_mode_map = {
             \ 'mode': 'active',
             \ 'active_filetypes': [],
             \ 'passive_filetypes': ['html'] }
+" }
+
+" YankRing {
+nnoremap <silent> <Leader>ys :YRShow<CR>
 " }
 
 " Eclim {
