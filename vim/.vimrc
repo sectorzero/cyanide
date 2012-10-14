@@ -156,6 +156,10 @@ autocmd BufRead,BufNewFile *.wiki            setfiletype Wikipedia
 autocmd BufRead,BufNewFile *.wikipedia.org*  setfiletype Wikipedia
 " }
 
+" ack-vim {
+let g:ackprg="$CYANIDE_HOME/vim/ack/ack-standalone -H --nocolor --nogroup --column" 
+" }
+
 " Eclim {
 " When a single result it found, open the corresponding file in a buffer
 let g:EclimJavaSearchSingleResult='edit'

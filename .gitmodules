@@ -58,3 +58,6 @@
 [submodule "vim/.vim/bundle/vim-DoxygenToolkit"]
 	path = vim/.vim/bundle/vim-DoxygenToolkit
 	url = git://github.com/vim-scripts/DoxygenToolkit.vim.git
+[submodule "vim/.vim/bundle/vim-ack"]
+	path = vim/.vim/bundle/vim-ack
+	url = git://github.com/mileszs/ack.vim.git

@@ -1,0 +1,2 @@
+Standalone ack is downloaded and added here. You will need to manually update it.
+curl http://betterthangrep.com/ack-standalone > ~/bin/ack && chmod 0755 !#:3
