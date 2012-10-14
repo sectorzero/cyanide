@@ -151,6 +151,10 @@ nmap <silent> <Leader>t :NERDTreeToggle<CR>
 " nmap <silent> <Leader>c :TlistToggle<cr>
 " }
 
+" Tagbar {
+nmap <silent> <Leader>c :TagbarToggle<cr>
+" }
+
 " Wikipedia {
 autocmd BufRead,BufNewFile *.wiki            setfiletype Wikipedia
 autocmd BufRead,BufNewFile *.wikipedia.org*  setfiletype Wikipedia
