@@ -174,5 +174,10 @@ Invocation Helpers :
 - Since one needs to remember different mappings for invoking different completion behaviours, there are plugins which try to make this user friendly
 - Eg. SuperTab - tries to provide a simple one-stroke interface to completion functions ( which can be confusing at first )
 
-
-
+L. How to upgrade the submodules 
+git pull
+git submodule init
+git submodule update
+git submodule foreach git pull origin master
+git submodule status
+git commit
