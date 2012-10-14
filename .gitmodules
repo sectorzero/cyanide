@@ -22,9 +22,6 @@
 [submodule "vim/.vim/bundle/minibufexpl"]
 	path = vim/.vim/bundle/minibufexpl
 	url = git://github.com/fholgado/minibufexpl.vim.git
-[submodule "vim/.vim/bundle/vim-yankring"]
-	path = vim/.vim/bundle/vim-yankring
-	url = git://github.com/chrismetcalf/vim-yankring.git
 [submodule "vim/.vim/bundle/vim-fugitive"]
 	path = vim/.vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
