@@ -57,6 +57,7 @@ F. Plugin List
 - Latex                         [ https://github.com/jcf/vim-latex.git/ ]
 - Ack                           [ git://github.com/mileszs/ack.vim.git ]
 - ctrlp                         [ git://github.com/kien/ctrlp.vim.git ]
+- Syntastic                     [ git://github.com/scrooloose/syntastic.git ]
 
 git submodule add git://github.com/tpope/vim-pathogen.git vim/vim-pathogen
 git submodule add git://github.com/tpope/vim-surround.git vim/.vim/bundle/vim-surround

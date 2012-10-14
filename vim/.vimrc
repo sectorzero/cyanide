@@ -177,6 +177,13 @@ set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
 set wildignore+=*.swp,*~,._*
 "}
 
+" Syntastic {
+let g:syntastic_mode_map = { 
+            \ 'mode': 'active',
+            \ 'active_filetypes': [],
+            \ 'passive_filetypes': ['html'] }
+" }
+
 " Eclim {
 " When a single result it found, open the corresponding file in a buffer
 let g:EclimJavaSearchSingleResult='edit'
