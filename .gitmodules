@@ -19,9 +19,6 @@
 [submodule "vim/.vim/bundle/nerdtree"]
 	path = vim/.vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
-[submodule "vim/.vim/bundle/taglist"]
-	path = vim/.vim/bundle/taglist
-	url = git://github.com/vim-scripts/taglist.vim.git
 [submodule "vim/.vim/bundle/minibufexpl"]
 	path = vim/.vim/bundle/minibufexpl
 	url = git://github.com/fholgado/minibufexpl.vim.git

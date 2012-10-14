@@ -144,11 +144,11 @@ nmap <silent> <Leader>t :NERDTreeToggle<CR>
 " }
 
 " TagList {
-let g:Tlist_Show_One_File=1
-let g:Tlist_Use_Right_Window=1
-let g:Tlist_WinWidth=40
-let g:Tlist_GainFocus_On_ToggleOpen=1
-nmap <silent> <Leader>c :TlistToggle<cr>
+" let g:Tlist_Show_One_File=1
+" let g:Tlist_Use_Right_Window=1
+" let g:Tlist_WinWidth=40
+" let g:Tlist_GainFocus_On_ToggleOpen=1
+" nmap <silent> <Leader>c :TlistToggle<cr>
 " }
 
 " Wikipedia {
