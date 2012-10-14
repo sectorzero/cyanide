@@ -160,6 +160,23 @@ autocmd BufRead,BufNewFile *.wikipedia.org*  setfiletype Wikipedia
 let g:ackprg="$CYANIDE_HOME/vim/ack/ack-standalone -H --nocolor --nogroup --column" 
 " }
 
+" ctrlp {
+let g:ctrlp_working_path_mode = 2
+let g:ctrlp_open_multiple_files = '1tjr'
+let g:ctrlp_custom_ignore = {
+            \ 'dir':  '\.git$\|\.hg$\|\.svn$|build',
+            \ 'file': '\.exe$\|\.so$\|\.dll$|tags' }
+
+" Disable output and VCS files
+set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
+
+" Disable archive files
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+
+" Disable temp and backup files
+set wildignore+=*.swp,*~,._*
+"}
+
 " Eclim {
 " When a single result it found, open the corresponding file in a buffer
 let g:EclimJavaSearchSingleResult='edit'
