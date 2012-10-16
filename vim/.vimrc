@@ -130,13 +130,13 @@ set smarttab                    " insert tabs on the start of a line according t
 
 " SuperTab {
 " supertab + eclim == java win
-let g:SuperTabDefaultCompletionType="<C-x><C-u>"
-let g:SuperTabDefaultCompletionTypeDiscovery = [
-\ "&completefunc:<C-x><C-u>",
-\ "&omnifunc:<C-x><C-o>",
-\ ]
-let g:SuperTabLongestHighlight = 1
-inoremap <C-space> <C-x><C-o>
+" let g:SuperTabDefaultCompletionType="<C-x><C-u>"
+" let g:SuperTabDefaultCompletionTypeDiscovery = [
+" \ "&completefunc:<C-x><C-u>",
+" \ "&omnifunc:<C-x><C-o>",
+" \ ]
+" let g:SuperTabLongestHighlight = 1
+" inoremap <C-space> <C-x><C-o>
 " }
 
 " NERDTree {
@@ -195,29 +195,25 @@ let g:syntastic_mode_map = {
 nnoremap <silent> <Leader>ys :YRShow<CR>
 " }
 
-" Eclim {
+" Eclim / Java {
+
 " When a single result it found, open the corresponding file in a buffer
 let g:EclimJavaSearchSingleResult='edit'
 " Do not try to override makeprg and efm
 let g:EclimJavaCompilerAutoDetect=0
+" Edit-Compile-Edit Cycle
+set efm=%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
+
 " }
 
 " }
 
 " IDE {
 
-" Edit-Compile-Edit Cycle
-set efm=%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
-
-" Search / Custom Grep
-"set grepprg=grep\ -nH\ $*
-set grepprg=grep\ -srnHw\ --binary-files=without-match\ --exclude=\"\*.git\*\"\ --exclude=\"\*build\*\"\ --exclude=\"\*tags\*\"\ .\ -e\ $*
-map <C-x><C-x> :execute " grep -srnHw --binary-files=without-match --exclude=\"\*.git\*\" --exclude=\"\*build\*\" --exclude=\"\*tags\*\" . -e " . expand("<cword>") . " " <bar> cwindow<CR>
 
 " }
 
 " Latex {
-
 
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
