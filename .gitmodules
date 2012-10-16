@@ -67,3 +67,6 @@
 [submodule "vim/.vim/bundle/vim-powerline"]
 	path = vim/.vim/bundle/vim-powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
+[submodule "vim/.vim/bundle/vim-commentary"]
+	path = vim/.vim/bundle/vim-commentary
+	url = git://github.com/tpope/vim-commentary.git
