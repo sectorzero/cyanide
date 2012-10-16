@@ -64,3 +64,6 @@
 [submodule "vim/.vim/bundle/vim-yankring"]
 	path = vim/.vim/bundle/vim-yankring
 	url = git://github.com/vim-scripts/YankRing.vim.git
+[submodule "vim/.vim/bundle/vim-powerline"]
+	path = vim/.vim/bundle/vim-powerline
+	url = git://github.com/Lokaltog/vim-powerline.git
