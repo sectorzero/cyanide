@@ -61,6 +61,7 @@ F. Plugin List
 - Tagbar                        [ git://github.com/majutsushi/tagbar.git ]
 - Powerline                     [ //github.com/Lokaltog/vim-powerline.git ]
 - Commentary                    [ git://github.com/tpope/vim-commentary.git ] 
+- Delimitmate                   [ git://github.com/Raimondi/delimitMate.git ]
 
 git submodule add git://github.com/tpope/vim-pathogen.git vim/vim-pathogen
 git submodule add git://github.com/tpope/vim-surround.git vim/.vim/bundle/vim-surround
