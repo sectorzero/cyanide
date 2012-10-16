@@ -186,9 +186,9 @@ set wildignore+=*.swp,*~,._*
 
 " Syntastic {
 let g:syntastic_mode_map = { 
-            \ 'mode': 'active',
+            \ 'mode': 'passive',
             \ 'active_filetypes': [],
-            \ 'passive_filetypes': ['html'] }
+            \ 'passive_filetypes': [] }
 " }
 
 " YankRing {
