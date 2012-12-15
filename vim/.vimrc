@@ -203,6 +203,11 @@ nnoremap <silent> <leader>gl :Glog<CR>
 nnoremap <silent> <leader>gp :Git push<CR>
 " }
 
+" Delimitmate {
+" Disable by default
+let delimitMate_offByDefault = 1
+" }
+
 " Eclim / Java {
 " When a single result it found, open the corresponding file in a buffer
 let g:EclimJavaSearchSingleResult='edit'
