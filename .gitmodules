@@ -64,3 +64,6 @@
 [submodule "vim/.vim/bundle/vim-latex"]
 	path = vim/.vim/bundle/vim-latex
 	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
+[submodule "vim/.vim/bundle/snipmate-snippets"]
+	path = vim/.vim/bundle/snipmate-snippets
+	url = git://github.com/scrooloose/snipmate-snippets.git
