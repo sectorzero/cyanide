@@ -40,9 +40,6 @@
 [submodule "vim/.vim/bundle/vim-addon-mw-utils"]
 	path = vim/.vim/bundle/vim-addon-mw-utils
 	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "vim/.vim/bundle/snipmate-snippets"]
-	path = vim/.vim/bundle/snipmate-snippets
-	url = git://github.com/honza/snipmate-snippets.git
 [submodule "vim/.vim/bundle/vim-DoxygenToolkit"]
 	path = vim/.vim/bundle/vim-DoxygenToolkit
 	url = git://github.com/vim-scripts/DoxygenToolkit.vim.git
