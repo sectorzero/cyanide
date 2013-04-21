@@ -188,3 +188,53 @@ git submodule update
 git submodule foreach git pull origin master
 git submodule status
 git commit
+
+J. Ongoing clang_complete experimentation
+- Unresolved issue : 
+  When completion happens the insert mode automatically jumps to insert-paste mode
+  I have isolated it to prove that it is caused by the current .vimrc and current set
+  of plugins. So need to debug this
+- Installed clang on Mac OS X using Xcode
+- Compiled Vim with the following options : 
+CONF_ARGS = --with-modified-by="sectorzero"
+CONF_OPT_GUI = --disable-gui
+CONF_OPT_DARWIN = --with-mac-arch=i386
+CONF_OPT_PYTHON = --enable-pythoninterp
+CONF_OPT_PYTHON3 = --enable-python3interp
+CONF_OPT_RUBY = --enable-rubyinterp
+CONF_OPT_CSCOPE = --enable-cscope
+CONF_OPT_MULTIBYTE = --enable-multibyte
+CONF_OPT_OUTPUT = --enable-fontset
+CONF_OPT_FEAT = --with-features=huge
+CONF_OPT_COMPBY = "--with-compiledby=sectorzero<sectorzero@unknown.com>"
+CONF_OPT_X = --without-x
+CC = clang
+- Version looks like : 
+M - Vi IMproved 7.3 (2010 Aug 15, compiled Apr 20 2013 16:45:21)
+MacOS X (unix) version
+Modified by sectorzero
+Compiled by sectorzero<sectorzero@unknown.com>
+Huge version without GUI.  Features included (+) or not (-):
++arabic +autocmd -balloon_eval -browse ++builtin_terms +byte_offset +cindent
+-clientserver +clipboard +cmdline_compl +cmdline_hist +cmdline_info +comments
++conceal +cryptv +cscope +cursorbind +cursorshape +dialog_con +diff +digraphs
+-dnd -ebcdic +emacs_tags +eval +ex_extra +extra_search +farsi +file_in_path
++find_in_path +float +folding -footer +fork() -gettext -hangul_input +iconv
++insert_expand +jumplist +keymap +langmap +libcall +linebreak +lispindent
++listcmds +localmap -lua +menu +mksession +modify_fname +mouse -mouseshape
++mouse_dec -mouse_gpm -mouse_jsbterm +mouse_netterm -mouse_sysmouse
++mouse_xterm +multi_byte +multi_lang -mzscheme +netbeans_intg -osfiletype
++path_extra -perl +persistent_undo +postscript +printer +profile +python
+-python3 +quickfix +reltime +rightleft +ruby +scrollbind +signs +smartindent
+-sniff +startuptime +statusline -sun_workshop +syntax +tag_binary
++tag_old_static -tag_any_white -tcl +terminfo +termresponse +textobjects +title
+ -toolbar +user_commands +vertsplit +virtualedit +visual +visualextra +viminfo
+ +vreplace +wildignore +wildmenu +windows +writebackup -X11 -xfontset -xim -xsmp
+  -xterm_clipboard -xterm_save
+     system vimrc file: "$VIM/vimrc"
+          user vimrc file: "$HOME/.vimrc"
+                user exrc file: "$HOME/.exrc"
+                  fall-back for $VIM: "/usr/local/share/vim"
+                  Compilation: clang -c -I. -Iproto -DHAVE_CONFIG_H   -DMACOS_X_UNIX -no-cpp-precomp  -O2 -fno-strength-reduce -Wall -D_FORTIFY_SOURCE=1     -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin11.0 -DRUBY_VERSION=18
+                  Linking: clang   -L.     -L/usr/local/lib -o vim       -lm -lncurses  -liconv -framework Cocoa     -framework Python   -lruby -lobjc
+
