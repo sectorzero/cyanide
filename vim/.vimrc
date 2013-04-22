@@ -12,6 +12,8 @@
 " Blacklist / Disable Plugins
 let g:pathogen_disabled = []
 " call add(g:pathogen_disabled, '<bundle_name>')
+" Disabling clang_complete for default configuration
+call add(g:pathogen_disabled, 'clang_complete')
 
 " Pathogen initialization of plugin bundles
 runtime! autoload/pathogen.vim
@@ -242,8 +244,8 @@ let g:Tex_DefaultTargetFormat='pdf'
 "" completefunc
 "set completeopt-=preview
 "
-"" clang_complete is it enabled
-let g:clang_use_library=0
+"" clang_complete uses libclang directly
+"let g:clang_use_library=1
 "
 "" clang_complete : limit memory usage
 "let g:clang_memory_percent=70
