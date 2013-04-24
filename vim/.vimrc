@@ -88,12 +88,6 @@ set autowrite
 " History
 set history=1000
 
-" Paste Mode
-set pastetoggle=<C-p>
-
-" Do Not Pop Preview Window for OmniComplete / AutoComplete
-set completeopt-=preview
-
 " disable cursor keys in normal mode
 map <Left>  :echo "no!"<cr>
 map <Right> :echo "no!"<cr>
@@ -238,37 +232,39 @@ let g:Tex_DefaultTargetFormat='pdf'
 " }
 
 " Clang_Complete ( experimental ) {
-"
-"" Do not show the preview window during completion 
-"" ( shows prototype and additional data ) based on 
-"" completefunc
-"set completeopt-=preview
-"
-"" clang_complete uses libclang directly
-"let g:clang_use_library=1
-"
-"" clang_complete : limit memory usage
-"let g:clang_memory_percent=70
-"
-"" clang_complete : c++11 support
-"" let g:clang_user_options=' -std=c++11 || exit 0'
-"
-"" clang_complete : completion usability
-"let g:clang_auto_select=1
-"" let g:clang_complete_auto=0
-"let g:clang_trailing_placeholder=1
-"let g:clang_complete_copen=1
-"let g:clang_complete_macros=1
-"let g:clang_complete_patterns=0
-"let g:clang_hl_errors=1
-"
-"" clang_complete : 'snippets' type enhancement 
-"let g:clang_snippets=0
-"let g:clang_conceal_snippets=1
-"let g:clang_snippets_engine='clang_complete'
-""set conceallevel=2
-""set concealcursor=vin
-"
+
+" Do not show the preview window during completion 
+" ( shows prototype and additional data ) based on 
+" completefunc
+set completeopt-=preview
+
+" clang_complete uses libclang directly
+let g:clang_use_library=1
+
+" clang_complete : limit memory usage
+let g:clang_memory_percent=70
+
+" clang_complete : c++11 support
+" let g:clang_user_options=' -std=c++11 || exit 0'
+
+" clang_complete : completion usability
+let g:clang_auto_select=1
+" let g:clang_complete_auto=0
+let g:clang_trailing_placeholder=1
+let g:clang_complete_copen=1
+let g:clang_complete_macros=1
+let g:clang_complete_patterns=0
+let g:clang_hl_errors=1
+
+" clang_complete : 'snippets' type enhancement 
+let g:clang_snippets=0
+let g:clang_conceal_snippets=1
+let g:clang_snippets_engine='clang_complete'
+
+" Not sure what this is
+"set conceallevel=2
+"set concealcursor=vin
+
 " }
 
 " Older / Preserved {
