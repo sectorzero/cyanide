@@ -187,7 +187,7 @@ let g:syntastic_mode_map = {
 " }
 
 " YankRing {
-nnoremap <silent> <Leader>ys :YRShow<CR>
+nnoremap <silent> <C-y> :YRShow<CR>
 " }
 
 " Fugitive {
