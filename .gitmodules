@@ -58,9 +58,6 @@
 [submodule "vim/.vim/bundle/vim-delimitmate"]
 	path = vim/.vim/bundle/vim-delimitmate
 	url = git://github.com/Raimondi/delimitMate.git
-[submodule "vim/.vim/bundle/vim-latex"]
-	path = vim/.vim/bundle/vim-latex
-	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
 [submodule "vim/.vim/bundle/clang_complete"]
 	path = vim/.vim/bundle/clang_complete
 	url = git://github.com/Rip-Rip/clang_complete.git
