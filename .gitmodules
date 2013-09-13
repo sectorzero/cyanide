@@ -64,3 +64,6 @@
 [submodule "vim/.vim/bundle/ultisnips"]
 	path = vim/.vim/bundle/ultisnips
 	url = git://github.com/SirVer/ultisnips.git
+[submodule "vim/.vim/bundle/vim-latex"]
+	path = vim/.vim/bundle/vim-latex
+	url = git://git.code.sf.net/p/vim-latex/vim-latex
