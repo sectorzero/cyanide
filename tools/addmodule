@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+
+from urlparse import urlparse
+import sys
+import os
+import subprocess
+
+# uri = 'https://github.com/bling/vim-airline.git'
+if len(sys.argv) < 2 :
+    sys.exit(1)
+
+uri = sys.argv[1];
+uri_attributes = urlparse(uri)
+uri_path = uri_attributes.path
+
+uri_path_parts = uri_path.split('/')
+if len(uri_path_parts) < 1 :
+    sys.exit(2)
+uri_path_parts_last = uri_path_parts[len(uri_path_parts)-1]
+
+repo_label_tokens = uri_path_parts_last.split('.')
+if len(repo_label_tokens) < 2 : 
+    sys.exit(3)
+repo_label = repo_label_tokens[0]
+
+cmdline = 'git submodule add ' + uri + ' ./vim/.vim/bundle/' + repo_label
+print cmdline
+subprocess.call(cmdline.split())
