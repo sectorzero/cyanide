@@ -4,3 +4,12 @@
 [submodule "vim/.vim/bundle/vim-colors-solarized"]
 	path = vim/.vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/.vim/bundle/unite"]
+	path = vim/.vim/bundle/unite
+	url = https://github.com/Shougo/unite.vim.git
+[submodule "vim/.vim/bundle/unite-help"]
+	path = vim/.vim/bundle/unite-help
+	url = https://github.com/tsukkee/unite-help.git
+[submodule "vim/.vim/bundle/vimproc"]
+	path = vim/.vim/bundle/vimproc
+	url = https://github.com/Shougo/vimproc.vim.git

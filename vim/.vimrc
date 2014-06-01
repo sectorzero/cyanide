@@ -71,14 +71,11 @@ set incsearch     " show search matches as you type
 set ignorecase    " ignore case when searching
 set smartcase     " ignore case if search pattern is all lowercase, case-sensitive otherwise
 set hlsearch      " highlighted
-nnoremap <leader><space> :noh<cr>
+"nnoremap <leader><space> :noh<cr>
 
 " Visual Reference
 set scrolljump=5                " lines to scroll when cursor leaves screen
 set scrolloff=3                 " minimum lines to keep above and below cursor"
-
-" ??
-set iskeyword+=_
 
 " Saving
 set autowrite
@@ -94,28 +91,28 @@ map <Down>  :echo "no!"<cr>
 
 " }
 
-" Formatting {
-
-" Columns and Wrap
-set wrap
-set textwidth=79
-set formatoptions=qrn1
-"set colorcolumn=85
-
-" Hidden characters
-"set list
-":map <C-u> :set list!<cr>
-set listchars=tab:>.,trail:.,extends:#,nbsp:.  " Highlight problematic whitespace
-                                
-" Indenting
-set autoindent                 	" indent at the same level of the previous line
-set copyindent                  " copy the previous indentation on autoindenting
-set expandtab 	  	     		" tabs are spaces, not tabs
-set tabstop=4 					" an indentation every four columns
-set shiftwidth=4                " number of spaces to use for autoindenting
-set softtabstop=4 				" let backspace delete indent
-set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
-set smarttab                    " insert tabs on the start of a line according to
+"" Formatting {
+"
+"" Columns and Wrap
+"set wrap
+"set textwidth=79
+"set formatoptions=qrn1
+""set colorcolumn=85
+"
+"" Hidden characters
+""set list
+"":map <C-u> :set list!<cr>
+"set listchars=tab:>.,trail:.,extends:#,nbsp:.  " Highlight problematic whitespace
+"                                
+"" Indenting
+"set autoindent                 	" indent at the same level of the previous line
+"set copyindent                  " copy the previous indentation on autoindenting
+"set expandtab 	  	     		" tabs are spaces, not tabs
+"set tabstop=4 					" an indentation every four columns
+"set shiftwidth=4                " number of spaces to use for autoindenting
+"set softtabstop=4 				" let backspace delete indent
+"set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
+"set smarttab                    " insert tabs on the start of a line according to
                                 " shiftwidth, not tabstop
 " }
 
