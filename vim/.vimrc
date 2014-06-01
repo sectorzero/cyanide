@@ -123,6 +123,11 @@ map <Down>  :echo "no!"<cr>
 
 " }
 
+" vim-airline {
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#branch#enabled = 1
+" }
+
 " Customization / Override {
 " if filereadable(expand("~/.vimrc.local"))
 "     source ~/.vimrc.local

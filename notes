@@ -1,0 +1,21 @@
+Features to provide : 
+
+- file searcher - unite
+- grep for a occurence - unite + ag
+- yank list - unite
+- buffer list and navigate - unite
+- tags - need ctags integration and a) tagbar or b) unite-tag
+- snippets - ultinsips
+- c++ indexing and completion - youcompleteme or clang_complete or necocachecomplete
+- edit-compile-edit cycles - antilag integrated with cmake with shortcuts
+- colorscheme - solarized
+- improvements : 
+-- supertab
+-- sorround+repeat
+-- matchit
+-- vim-alternate
+- status-bar - vim-airline - need to investiage
+- git - ?
+- documents - latex
+- plugin management and auto-update - pathogen 
+
