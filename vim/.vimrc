@@ -22,11 +22,65 @@ silent! call pathogen#helptags()
 
 " General Vim Environment {
 set nocompatible
+
+" Enable filetype plugin
+filetype indent on
 filetype plugin on
 filetype plugin indent on
+
+" syntax highlighting
 syntax enable
-set modelines=0
+
+" Explicitly set encoding to utf-8
 set encoding=utf-8
+
+" Allow changing buffer without saving first
+set hidden
+
+" Allow Mouse Usage
+" set mouse=a
+" Hide mouse when typing
+" set mousehide
+
+" Performance considerations for network
+"set ttyfast
+"set ttyscroll=0
+set ttimeout
+set ttimeoutlen=50
+
+" Sets how many lines of history VIM has to remember
+set history=1000
+
+" Auto reload if file is saved externally.
+set autoread
+set autowrite
+
+" Turn off cursor blinking
+set guicursor=a:blinkon0
+
+set ruler "Always show current position
+set number
+
+" Disable all bells
+set noerrorbells
+set novisualbell
+set t_vb=
+
+set showmatch " Show matching bracets when text indicator is over them
+set matchtime=2
+
+set virtualedit=onemore
+
+set nomodeline
+set modelines=0
+
+set lazyredraw
+
+" disable cursor keys in normal mode
+map <Left>  :echo "no!"<cr>
+map <Right> :echo "no!"<cr>
+map <Up>    :echo "no!"<cr>
+map <Down>  :echo "no!"<cr>
 " }
 
 " Appearence {
@@ -49,61 +103,95 @@ colorscheme solarized
 " }
 " }
 
-" Usability {
-" Line numbering
-set number
-" Silence
-set visualbell
-set noerrorbells
+" Interface {
+set shortmess=Iat
+
+" Blank vsplit separator
+set fillchars+=vert:\ 
+
+" Ask for confirmation for various things
+set confirm
+
+" Minimal number of screen lines to keep above and below the cursor
+set scrolloff=10
+" How many lines to scroll at a time, make scrolling appears faster
+set scrolljump=5
+set sidescrolloff=5
+
+" Auto complete setting
+set completeopt=longest,menuone
+" Don't complete from other buffer
+" set complete=.
+
+" show list for autocomplete
+set wildmenu
+set wildmode=list:longest
+set wildignorecase
+
+set wildignore=*.o,*.pyc,*.hi
+set wildignore+=.hg,.git,.svn,.gitignore         " Version control
+set wildignore+=*.aux,*.out,*.toc                " LaTeX intermediate files
+set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg   " binary images
+set wildignore+=*.o,*.obj,*.dll,*.manifest       " compiled object files
+set wildignore+=*.d                              " dependency files
+set wildignore+=*.spl                            " compiled spelling word lists
+set wildignore+=*.sw?                            " Vim swap files
+set wildignore+=*.DS_Store                       " OSX BS
+
+set wildignore+=*.luac                           " Lua byte code
+set wildignore+=*.pyc                            " Python byte code
+
+set wildignore+=*.wav,*.mp3,*.ogg
+set wildignore+=*.png,*.jpg,*.gif
+set wildignore+=*.so,*.swp,*.zip,*.pdf
+
+set wildignore+=*.exe,*.jar,*.class
+
+" Files with these suffixes get a lower priority when matching a wildcard
+set suffixes=.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
+
+" Allow backspacing everything in insert mode
+set backspace=indent,eol,start
+
+" Searching
+set nohlsearch " Don't Highlight search things
+"nnoremap <leader><space> :noh<cr>
+set ignorecase " Ignore case when searching
+set smartcase  " If there are any capitalized letters, case sensitive search
+set incsearch  " Make search act like search in modern browsers
+set wrapscan   " Search wraps around the end of the file
+
+if executable('ack')
+    set grepprg=ack\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow\ $*
+    set grepformat=%f:%l:%c:%m
+endif
+if executable('ag')
+    set grepprg=ag\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow
+    set grepformat=%f:%l:%c:%m
+endif
+
 " Status
-set ruler
+let &statusline="%{winnr('$')>1?'['.winnr().'/'.winnr('$')"
+            \ . ".(winnr('#')==winnr()?'#':'').']':''}\ "
+            \ . "%{(&previewwindow?'[preview] ':'').expand('%:t:.')}"
+            \ . "\ %=%m%y%{'['.(&fenc!=''?&fenc:&enc).','.&ff.']'}"
+            \ . "%{printf('  %4d/%d',line('.'),line('$'))}"
 set laststatus=2
 set cursorline
 set showcmd
 set showmode
-" Ref : http://nvie.com/posts/how-i-boosted-my-vim/
-" Aallow backspacing over everything in insert mode
-set backspace=indent,eol,start 
-set scrolloff=3
-
-" Search
-set incsearch     " show search matches as you type
-set ignorecase    " ignore case when searching
-set smartcase     " ignore case if search pattern is all lowercase, case-sensitive otherwise
-set hlsearch      " highlighted
-"nnoremap <leader><space> :noh<cr>
-
-" Visual Reference
-set scrolljump=5                " lines to scroll when cursor leaves screen
-set scrolloff=3                 " minimum lines to keep above and below cursor"
-
-" Saving
-set autowrite
-
-" History
-set history=1000
-
-" disable cursor keys in normal mode
-map <Left>  :echo "no!"<cr>
-map <Right> :echo "no!"<cr>
-map <Up>    :echo "no!"<cr>
-map <Down>  :echo "no!"<cr>
-
 " }
 
 "" Formatting {
 
 " Columns and Wrap
 set wrap
+set whichwrap+=h,l,<,>,[,]
+set linebreak
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
 
-"" Hidden characters
-""set list
-"":map <C-u> :set list!<cr>
-"set listchars=tab:>.,trail:.,extends:#,nbsp:.  " Highlight problematic whitespace
-"                                
 " Indenting
 set autoindent                 	" indent at the same level of the previous line
 set copyindent                  " copy the previous indentation on autoindenting
@@ -114,6 +202,10 @@ set softtabstop=4 				" let backspace delete indent
 set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
 set smarttab                    " insert tabs on the start of a line according to
                                 " shiftwidth, not tabstop
+set list
+set listchars=tab:▸\ ,extends:❯,precedes:❮,nbsp:␣,trail:• ",eol:¬
+set showbreak=↪
+
 " }
 
 " Plugins {
@@ -145,6 +237,15 @@ nnoremap <leader>p :<C-u>Unite history/yank<CR>
 
 nnoremap <silent> <leader>s :<C-u>Unite -buffer-name=grep grep:.<CR>
 nnoremap <silent> <leader>a :<C-u>UniteWithCursorWord grep:.<CR>
+
+"if executable('ag')
+"    let g:unite_source_grep_command='ag'
+"    let g:unite_source_grep_default_opts='--nocolor --nogroup -S -C4'
+"    let g:unite_source_grep_recursive_opt=''
+"
+"    " Set up ignores for ag when using file_rec/async
+"    let g:unite_source_rec_async_command='ag --nocolor --nogroup --ignore ".hg" --ignore ".svn" --ignore ".git" --ignore ".bzr" --ignore "build" --ignore ".cmake" --ignore "CMakeLists.txt" --hidden -g ""'
+"endif
 
 "}
 
