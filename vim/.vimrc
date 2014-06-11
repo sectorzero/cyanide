@@ -202,9 +202,9 @@ set softtabstop=4 				" let backspace delete indent
 set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
 set smarttab                    " insert tabs on the start of a line according to
                                 " shiftwidth, not tabstop
-set list
-set listchars=tab:▸\ ,extends:❯,precedes:❮,nbsp:␣,trail:• ",eol:¬
-set showbreak=↪
+"set list
+"set listchars=tab:▸\ ,extends:❯,precedes:❮,nbsp:␣,trail:• ",eol:¬
+"set showbreak=↪
 
 " }
 
@@ -256,6 +256,9 @@ nnoremap <leader>c :<C-u>TagbarToggle<CR>
 " vim-airline {
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
+let g:airline_left_sep = '»'
+let g:airline_right_sep = '«'
+let g:airline#extensions#whitespace#enabled = 0
 " }
 
 " Customization / Override {
