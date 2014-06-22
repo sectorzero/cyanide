@@ -1,5 +1,5 @@
 Features to provide : 
-
+---------------------
 - file searcher - unite
 - grep for a occurence - unite + ag
 - yank list - unite
@@ -19,3 +19,62 @@ Features to provide :
 - documents - latex
 - plugin management and auto-update - pathogen 
 
+VIM build 
+---------
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Sep  6 2013 16:15:58)
+MacOS X (unix) version
+Normal version without GUI.  Features included (+) or not (-):
+-arabic          +file_in_path    -mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           -mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
++builtin_terms   -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         -gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
++clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    -keymap          +postscript      +virtualedit
++comments        -langmap         +printer         +visual
+-conceal         +libcall         -profile         +visualextra
++cryptv          +linebreak       -python          +viminfo
+-cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             -rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
+-emacs_tags      -mouseshape      -sniff           -xsmp
++eval            -mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        -mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    
+-farsi           -mouse_netterm   +syntax          
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DMACOS_X_UNIX -no-cpp-precomp  -g -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -L/usr/local/lib -o vim        -lm -lncurses  -liconv -framework Cocoa          
+
+Readme
+------
+
+Installation
+------------
+1. Install vim
+2. Install cyanide : 
+    cd <root_dir>
+    git clone git://github.com/sectorzero/cyanide.git
+    echo "export CYANIDE_HOME=<root_dir>/cyanide"  >> ~/.zshrc
+    source ~/.zshrc
+    <root_dir>/cyanide/tools/install
+3. Customize : 
+    touch ~/.vimrc.local ( add your rc customizations here )
+
+Tested on : 
+----------
+- Linux - Fedora/Redhat
+- Mac OS X

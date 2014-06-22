@@ -1,0 +1,22 @@
+#!/bin/sh
+
+if [[ -z "$CYANIDE_HOME" ]]; then
+    echo "CYANIDE_HOME environment variable not set, please set it"
+    exit 1
+fi
+
+# Init/Update all the git submodules
+$CYANIDE_HOME/tools/initmodules
+if [[ ! "$?" -eq 0 ]]; then
+    echo "Error initializing git submodules"
+    exit 1
+fi
+
+cd $CYANIDE_HOME/vim/.vim/bundle/vimproc
+make
+if [[ ! "$?" -eq 0 ]]; then
+    echo "Error compiling vimproc"
+    exit 1
+fi
+
+cd $CYANIDE_HOME
